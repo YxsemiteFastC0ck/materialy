@@ -1,46 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
-}
-body{
-    height: 100vh;
-    background: #333;
-    display: grid;
-    place-content: center;
-    font-family: 'Poppins', sans-serif;
-}
-a{
-    color: white;
-    background: linear-gradient(0deg, rgba(238,174,255,1) 0%, rgba(76,223,185,1) 100%);
-    padding: 20px;
-    padding-inline: 30px;
-    font-size: 30px;
-    border-radius: 100px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 600;
-    text-shadow: 0 0 15px #3b3b3b;
-    transition: 0.5s;
-    
-
-}
-
-a:hover{
-    font-size: 35px;
-    transition: 0.5s;
-    
-}
-.tlo{
-    position: absolute;
-    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  body{
+    background: #101728;
+  }
+  
+  nav{
     width: 100vw;
-    background: #333;
-    z-index: -1;
-    transition: 0.5s;
+    display: grid;
+    place-items: center;
+}
 
+  nav img{
+    width: 300px;
+    padding: 20px;
+
+  }
+
+  main{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    gap: 150px;
+    align-items: center;
+    margin-top: 100px;
+  }
+main h1{
+    font-size: 65px;
+    width: 550px;
 }
-a:hover ~ .tlo{
-    transition: 0.5s;
-    background: rgb(255, 120, 120);
+button{
+    background: linear-gradient(90deg, rgba(255,60,95,1) 0%, rgba(147,64,255,1) 100%);
+    width: 200px;
+    height: 80px;
+    border-radius: 100px;
+    
 }
+  main a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0F1819;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .tekstmain{
+    display: grid;
+    gap: 50px;
+  }
+
+  .zdjmain{
+    border-radius: 20px;
+    width: 500px;
+  }
+  
+
+  main h1 span img{
+    width: 350px;
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(220deg) brightness(95%) contrast(80%);
+
+  }
+.main{
+  height: 70vh;
+  display: grid;
+  place-content: center;
+}
+
