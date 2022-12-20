@@ -28,15 +28,25 @@ main {
   display: flex;
   justify-content: center;
   width: 100vw;
-  gap: 150px;
+  gap: 250px;
   align-items: center;
   margin-top: 100px;
+
 }
 
 main h1 {
   font-size: 65px;
-  width: 550px;
+  width: 460px;
 
+}
+main h1::before{
+  content: '';
+  background: linear-gradient(90deg, rgba(255, 60, 95, 1) 0%, rgba(147, 64, 255, 1) 100%);
+  position: absolute;
+  width: 450px;
+  height: 160px;
+  filter: blur(100px);
+  z-index: -1;
 }
 
 main button {
@@ -48,6 +58,7 @@ main button {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 
 }
 
@@ -81,6 +92,7 @@ main h1 span img {
 
 }
 
+
 .main {
   height: 70vh;
   display: grid;
@@ -93,3 +105,4 @@ main button:hover {
   transition: ease-in-out 0.5s;
 
 }
+
