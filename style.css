@@ -158,9 +158,11 @@ main h1 span img {
     overflow: hidden;
 
   }
-  .logo{
+
+  .logo {
     padding-top: 20px;
   }
+
   main {
     display: grid;
     place-items: center;
@@ -181,18 +183,21 @@ main h1 span img {
     visibility: hidden;
   }
 }
+
 @media screen and (max-width: 685px) {
-nav ul{
-  display: grid;
-}
-  nav ul a{
+  nav ul {
+    display: grid;
+  }
+
+  nav ul a {
     font-size: 30px;
   }
 
-  main{
+  main {
     margin-top: -200px;
   }
-  main h1{
+
+  main h1 {
     font-size: 70px;
   }
 }
