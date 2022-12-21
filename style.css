@@ -94,7 +94,7 @@ main h1::before {
 }
 
 
-.zdjboxmain::before{
+.zdjboxmain::before {
   content: '';
   background: linear-gradient(90deg, rgba(147, 64, 255, 1) 0%, rgba(255, 60, 95, 1) 100%);
   position: absolute;
@@ -115,4 +115,84 @@ main h1 span img {
   height: 70vh;
   display: grid;
   place-content: center;
+}
+
+@media screen and (max-width: 1420px) {
+  body {
+    overflow: hidden;
+  }
+
+  main h1 {
+    font-size: 60px;
+  }
+
+  .zdjmain {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  body {
+    overflow: hidden;
+  }
+
+  main {
+    gap: 0px;
+  }
+
+  main h1 {
+    font-size: 50px;
+  }
+
+  main h1 span img {
+    width: 400px;
+  }
+
+  .zdjmain {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    overflow: hidden;
+
+  }
+  .logo{
+    padding-top: 20px;
+  }
+  main {
+    display: grid;
+    place-items: center;
+    height: 40vh;
+  }
+
+  main h1 {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+  }
+
+  main h1 span img {
+    width: 500px;
+  }
+
+  .zdjboxmain {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 685px) {
+nav ul{
+  display: grid;
+}
+  nav ul a{
+    font-size: 30px;
+  }
+
+  main{
+    margin-top: -200px;
+  }
+  main h1{
+    font-size: 70px;
+  }
 }
