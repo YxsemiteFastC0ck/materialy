@@ -8,101 +8,111 @@
 }
 
 body {
-  background: #101728;
+  background: url(tlo.jpg);
+  backdrop-filter: blur(3px);
+  height: 100vh;
 }
 
 nav {
   width: 100vw;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 40px;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 25px rgb(43, 43, 43);
+}
+
 
 nav img {
   width: 300px;
-  padding: 30px;
+}
 
+.logo {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+
+.logoikona {
+  width: 70px;
 }
 
 main {
   color: white;
   display: flex;
-  justify-content: center;
-  width: 100vw;
-  gap: 250px;
+  justify-content: space-around;
   align-items: center;
   margin-top: 100px;
-
+  flex-wrap: wrap;
+  gap: 100px;
 }
 
 main h1 {
-  font-size: 65px;
-  width: 460px;
+  font-size: 100px;
+  width: 700px;
+  font-weight: 800;
 
 }
-main h1::before{
+
+main h1::before {
   content: '';
   background: linear-gradient(90deg, rgba(255, 60, 95, 1) 0%, rgba(147, 64, 255, 1) 100%);
   position: absolute;
-  width: 450px;
+  width: 650px;
   height: 160px;
   filter: blur(100px);
   z-index: -1;
 }
 
-main button {
-  background: linear-gradient(90deg, rgba(255, 60, 95, 1) 0%, rgba(147, 64, 255, 1) 100%);
-  width: 200px;
-  height: 80px;
-  border-radius: 100px;
-  transition: ease-in-out 0.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-
-}
-
-button a {
-  text-decoration: none;
-  font-size: 25px;
-  color: #0F1819;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 800;
-  padding: 22px;
-  border-radius: 100px;
-
-}
 
 .tekstmain {
   display: grid;
   gap: 40px;
+
 }
 
 .zdjmain {
   border-radius: 20px;
-  width: 500px;
+  width: 600px;
+  opacity: 70%;
 }
 
+
+.zdjboxmain::before{
+  content: '';
+  background: linear-gradient(90deg, rgba(147, 64, 255, 1) 0%, rgba(255, 60, 95, 1) 100%);
+  position: absolute;
+  width: 450px;
+  height: 460px;
+  margin-top: 70px;
+  margin-left: 50px;
+  filter: blur(100px);
+  border-radius: 100px;
+  z-index: -1;
+}
 
 main h1 span img {
-  width: 350px;
-  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(220deg) brightness(95%) contrast(80%);
-
+  width: 550px;
 }
-
 
 .main {
   height: 70vh;
   display: grid;
   place-content: center;
 }
-
-
-main button:hover {
-  border-radius: 20px;
-  transition: ease-in-out 0.5s;
-
-}
-
