@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -67,7 +66,9 @@ main h1 {
   font-size: 100px;
   width: 700px;
   font-weight: 800;
-
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 main h1::before {
@@ -80,11 +81,20 @@ main h1::before {
   z-index: -1;
 }
 
-
-.tekstmain {
+.tekstmain{
   display: grid;
-  gap: 40px;
+}
 
+
+.tekstmain p{
+  width: 600px;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 600;
+  place-self: center;
+}
+.tekstmain p span{
+  font-weight: 800;
 }
 
 .zdjmain {
