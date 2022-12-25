@@ -57,21 +57,11 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
-  flex-wrap: wrap;
   gap: 100px;
 }
 
-main h1 {
-  font-size: 100px;
-  width: 700px;
-  font-weight: 800;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
 
-main h1::before {
+.tekstmain::before {
   content: '';
   background: linear-gradient(90deg, rgba(255, 60, 95, 1) 0%, rgba(147, 64, 255, 1) 100%);
   position: absolute;
@@ -88,10 +78,9 @@ main h1::before {
 
 .tekstmain p{
   width: 600px;
-  margin-top: 40px;
-  font-size: 30px;
+  margin-top: 20px;
+  font-size: 25px;
   font-weight: 600;
-  place-self: center;
 }
 .tekstmain p span{
   font-weight: 800;
@@ -117,97 +106,41 @@ main h1::before {
   z-index: -1;
 }
 
-main h1 span img {
+.tekstmain img {
   width: 550px;
 }
 
 .main {
-  height: 70vh;
+  height: 80vh;
   display: grid;
   place-content: center;
 }
 
-@media screen and (max-width: 1420px) {
-  body {
-    overflow: hidden;
-  }
+@media only screen and (max-width:700px){
 
-  main h1 {
-    font-size: 60px;
-  }
-
-  .zdjmain {
-    width: 400px;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  body {
-    overflow: hidden;
-  }
-
-  main {
-    gap: 0px;
-  }
-
-  main h1 {
-    font-size: 50px;
-  }
-
-  main h1 span img {
-    width: 400px;
-  }
-
-  .zdjmain {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  body {
-    overflow: hidden;
-
-  }
-
-  .logo {
-    padding-top: 20px;
-  }
-
-  main {
+  nav{
     display: grid;
-    place-items: center;
-    height: 40vh;
+    margin-top: 20px;
+    margin-left: 80px;
   }
-
-  main h1 {
-    font-size: 100px;
-    text-align: center;
-    color: white;
-  }
-
-  main h1 span img {
-    width: 500px;
-  }
-
-  .zdjboxmain {
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 685px) {
   nav ul {
     display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    list-style: none;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px;
+  }
+  
+
+  nav img {
+    width: 500px;
+  }
+  .logoikona {
+    display: none;
   }
 
-  nav ul a {
-    font-size: 30px;
-  }
-
-  main {
-    margin-top: -200px;
-  }
-
-  main h1 {
-    font-size: 70px;
-  }
 }
